@@ -38,7 +38,7 @@ export default function XemQuangCao() {
       const article = await { "price": priceUpdate, "chiSo": chiSoUpdate  };
       await axios.put('users/login/price/user', article, { headers })
       alert(`Chúc mừng bạn ${authState.user.name} được cộng: ${haiMuoi} VNĐ`);
-      navigate("/home");
+      navigate("/");
       location.reload();
       return false
       
@@ -58,7 +58,7 @@ export default function XemQuangCao() {
     <div className='container pt-5'>
       <div className='col h-screen container flex-row'>
       <p className='text-red-700 mb-3 text-2xl ml-5'>nhấn nút xem video để được cộng tiền</p>
-    <iframe className="justify-center" width="560" height="315" src="https://www.youtube.com/embed/ao-__TAIPig?start=40" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+    <iframe className="justify-center lg:w-8/12 lg:h-3/5 sm:w-10/12 sm:h-2/5" src="https://www.youtube.com/embed/ao-__TAIPig?start=40" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
     
       <button onClick={()=>{
         submit()

@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 const axiosCommon = () => {
-    axios.defaults.baseURL = 'http://localhost:5000/api/v1/';
+    axios.defaults.baseURL = 'http://34.126.141.218/api/v1/';
     axios.defaults.headers.common['Authorization'] = 'Bearer ' + localStorage.getItem('token');
     
 //     axios interceptors
